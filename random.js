@@ -26,6 +26,6 @@ const sleep = ms => new Promise(r => setTimeout(r, ms))
     const champ = champs[champName]
 
     nameBox.textContent = champ.id
-    imageBox.src = `images/${champ.key}.png`
+    imageBox.src = `https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/${champ.key}.png`
   })
 })()
