@@ -28,12 +28,13 @@ img#image-box {
     margin-bottom: 1rem;
 }
 
-.card {
+.card-columns .card {
     border-radius: 10px;
     padding: 20px 20px;
     background: #222;
-    display: grid;
+    width: auto;
 }
+
 
 #random-button {
     width: 120px;
@@ -97,4 +98,33 @@ img#image-box {
 }
 .banner img {
   height: 200px;
+}
+
+.card-columns {
+  column-gap: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .card-columns {
+      column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+      column-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-columns {
+      column-count: 2;
+  }
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+      column-count: 2;
+  }
+  
 }
