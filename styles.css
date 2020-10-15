@@ -25,15 +25,76 @@ body {
 img#image-box {
     width: 120px;
     height: 120px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .card {
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     background: #222;
+    display: grid;
 }
 
 #random-button {
     width: 120px;
+}
+
+.footer {
+    background: #222;
+    line-height: 3rem;
+}
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    position: relative;
+  }
+
+  a.inline-link {
+    letter-spacing: 0em;
+  }
+
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover {
+      color: #ffF;
+      text-decoration: none;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0;
+  }
+
+  .fa {
+      margin-right: 0.25em;
+  }
+
+  ul {
+      margin-bottom: 0em;
+  }
+
+  ul.footer-ul > li {
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    zoom:1;
+    *display:inline;
+    /* this fix is needed for IE7- */
+}
+.banner img {
+  height: 200px;
 }
