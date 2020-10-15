@@ -14,7 +14,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    max-width: 750px;
+    max-width: 800px;
     padding: 2rem;
     color: var(--nc-tx-2);
     background: var(--nc-bg-1);
@@ -34,7 +34,6 @@ img#image-box {
     background: #222;
     width: auto;
 }
-
 
 #random-button {
     width: 120px;
@@ -96,6 +95,11 @@ img#image-box {
     *display:inline;
     /* this fix is needed for IE7- */
 }
+
+.banner {
+  margin-bottom: 1rem;
+}
+
 .banner img {
   height: 200px;
 }
