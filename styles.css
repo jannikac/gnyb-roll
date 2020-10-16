@@ -1,99 +1,23 @@
 :root {
-    --nc-tx-1: #ffffff;
-    --nc-tx-2: #eeeeee;
-    --nc-bg-1: #000000;
-    --nc-bg-2: #111111;
-    --nc-bg-3: #222222;
-    --nc-lk-1: #3291FF;
-    --nc-lk-2: #0070F3;
-    --nc-lk-tx: #FFFFFF;
-    --nc-ac-1: #7928CA;
-    --nc-ac-tx: #FFFFFF;
+  --text-primary: #eeeeee;
+  --background-primary: #000000;
+  --background-secondary: #222222;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 2rem;
-    color: var(--nc-tx-2);
-    background: var(--nc-bg-1);
-    border-radius: 6px;
-    overflow-x: hidden;
-    line-height: 1.5;
-  }
-img#image-box {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem;
+  color: var(--text-primary);
+  background: var(--background-primary);
+  border-radius: 6px;
+  overflow-x: hidden;
+  line-height: 1.5;
 }
 
-.card-columns .card {
-    border-radius: 10px;
-    padding: 20px 20px;
-    background: #222;
-    width: auto;
-}
-
-#random-button {
-    width: 120px;
-}
-
-.footer {
-    background: #222;
-    line-height: 3rem;
-}
-
-  a {
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    
-    display: inline-block;
-    position: relative;
-  }
-
-  a.inline-link {
-    letter-spacing: 0em;
-  }
-
-  a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  a:hover {
-      color: #ffF;
-      text-decoration: none;
-  }
-  a:hover:after { 
-    width: 100%; 
-    left: 0;
-  }
-
-  .fa {
-      margin-right: 0.25em;
-  }
-
-  ul {
-      margin-bottom: 0em;
-  }
-
-  ul.footer-ul > li {
-    display: inline-block;
-    /* You can also add some margins here to make it look prettier */
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    zoom:1;
-    *display:inline;
-    /* this fix is needed for IE7- */
+.fa {
+  margin-right: 0.25rem;
 }
 
 .banner {
@@ -104,31 +28,103 @@ img#image-box {
   height: 200px;
 }
 
+img#image-box {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+}
+
+button#random-button {
+  width: 120px;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  position: relative;
+}
+
+a.inline-link {
+  letter-spacing: 0em;
+}
+
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--text-primary);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+a:hover:after { 
+  width: 100%; 
+  left: 0;
+}
+
+.footer {
+  background: var(--background-secondary);
+  line-height: 3rem;
+}
+
+ul.footer-ul {
+  margin-bottom: 0rem;
+}
+
+ul.footer-ul > li {
+  display: inline-block;
+  /* You can also add some margins here to make it look prettier */
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  zoom:1;
+  *display:inline;
+  /* this fix is needed for IE7- */
+}
+
+.card-columns .card {
+  column-gap: 20rem;
+  border-radius: 10px;
+  padding: 20px 20px;
+  background: var(--background-secondary);
+  width: auto;
+}
+
 .card-columns {
   column-gap: 2rem;
 }
 
 @media (min-width: 1200px) {
   .card-columns {
-      column-count: 2;
+    column-count: 2;
   }
 }
 
 @media (min-width: 992px) {
   .card-columns {
-      column-count: 2;
+    column-count: 2;
   }
 }
 
 @media (min-width: 768px) {
   .card-columns {
-      column-count: 2;
+    column-count: 2;
   }
 }
 
 @media (min-width: 576px) {
   .card-columns {
-      column-count: 2;
+    column-count: 2;
   }
   
 }
