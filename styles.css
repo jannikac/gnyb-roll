@@ -34,14 +34,20 @@ img#image-box {
   margin-bottom: 1rem;
 }
 
-button#random-button {
+a#random-button {
   width: 120px;
+  width: 120px;
+  background: #4d4d4d;
+  color: var(--text-primary);
+  letter-spacing: 0rem;
+  border-radius: 0.25rem;
 }
+
 
 a {
   color: var(--text-primary);
   text-decoration: none;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.125rem;
   display: inline-block;
   position: relative;
 }
