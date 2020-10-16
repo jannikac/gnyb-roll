@@ -76,13 +76,14 @@ a:hover:after {
 .footer {
   background: var(--background-secondary);
   line-height: 3rem;
-}
-
-ul.footer-ul {
   margin-bottom: 0rem;
 }
 
-ul.footer-ul > li {
+.footer ul {
+  margin-bottom: 0rem;
+}
+
+.footer ul > li {
   display: inline-block;
   /* You can also add some margins here to make it look prettier */
   margin-left: 0.5em;

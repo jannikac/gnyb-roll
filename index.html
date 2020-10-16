@@ -17,50 +17,59 @@
     <title>Würfelqueue</title>
   </head>
   <body>
-    <div class="banner d-flex flex-wrap align-items-center justify-content-between">
-      <div class="flex-column">
-        <h1>Würfelqueue</h1>
-        <h2>Random Champion Generator</h2>
+    <div class="container">
+      <div class="row align-items-center justify-content-between banner">
+        <div class="column">
+          <h1>Würfelqueue</h1>
+          <h2>Random Champion Generator</h2>
+        </div>
+        <div class="column">
+          <a href="https://gnyb.ddns.net">
+            <img class="" src="logo-full.png">
+          </a>
+        </div>
       </div>
-      <div class="flex-column">
-        <a href="https://gnyb.ddns.net">
-          <img class="" src="logo-full.png">
-        </a>
-      </div> 
       
-    </div>
-      <div class="card-columns">
-        <div class="card w-100 text-center">
-          <div>
-            <h3 id="name-box">Kein Champion</h3>
-          </div>
-          <div>
-            <img id="image-box" src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/-1.png">
-          </div>
-          <div>
-            <button class="btn" id="random-button">Würfeln..</button>
+      <div class="row">            
+        <div class="column">      
+          <div class="card-columns">              
+
+            <div class="card w-100 text-center">
+              <div>
+                <h3 id="name-box">Kein Champion</h3>
+              </div>
+              <div>
+                <img id="image-box" src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/-1.png">
+              </div>
+              <div>
+                <button class="btn" id="random-button">Würfeln..</button>
+              </div>
+            </div>                
+            
+            <div class="card w-100">
+              <h5>Der offizielle GNYB Random Champion Generator!</h5>
+              <p>Warum unser Generator besser ist:</p>
+              <ul>
+                <li>immer up to date</li>
+                <li><a class=inline-link href="https://github.com/jannikac/gnyb-roll">vollständig Open Source</a></li>
+                <li>mit Liebe gemacht</li>
+              </ul>
+            </div>
+
           </div>
         </div>
-        
-        <div class="card">
-          <h5>Der offizielle GNYB Random Champion Generator!</h5>
-          <p>Warum unser Generator besser ist:</p>
-          <ul>
-            <li>immer up to date</li>
-            <li><a class=inline-link href="https://github.com/jannikac/gnyb-roll">vollständig Open Source</a></li>
-            <li>mit Liebe gemacht</li>
+      </div>
+
+      <div class="row">          
+        <div class="footer fixed-bottom text-center">            
+          <ul class="footer-ul">
+            <li><a href="https://github.com/jannikac/gnyb-roll"><i class="fa fa-github"></i>Github</a></li>
           </ul>
         </div>
-          
       </div>
-    <footer class="footer fixed-bottom text-center">
-      <div class="container text-center"></div>
-        <ul class="footer-ul">
-          <li><a href="https://github.com/jannikac/gnyb-roll"><i class="fa fa-github"></i>Github</a></li>
-        </ul>  
-      </div>
-    </footer>
 
-    <script src="random.js"></script>
+    </div>
+    
+  <script src="random.js"></script>
   </body>
 </html>
